@@ -1,0 +1,89 @@
+// // Toggle global options
+// $enable-rounded: false;
+// $enable-gradients: false;
+// $enable-shadows: true;
+
+// $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+// // Customize some defaults
+// $primary: #8f4a25;
+// $body-bg: #333;
+// $border-radius: .9rem;
+// $success: #7952b3;
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//$body-bg: #f8f9fa;
+//$blue: #1864ab;
+/* $secondary: #632a50;
+$body-color: #343a40;
+$btn-font-weight: bold;
+$nav-link-font-weight: bold;
+$navbar-nav-link-padding-x: 1.5rem;
+ */
+
+// My pallete
+$my-primary: #6c63ff;
+$my-neutral: #f8f9fa;
+$my-accent: #6c63ff;
+$my-text: #343a40;
+
+$primary: $my-primary;
+$body-bg: $my-neutral;
+$body-color: $my-text;
+$nav-link-font-weight: bold;
+$link-hover-decoration: true;
+
+$border-radius: 0.5rem;
+
+//$card-bg: $my-accent;
+
+//$navbar-brand-color: $my-accent;
+
+//$navbar-brand-font-size: 1.2rem;
+
+//@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Permanent+Marker&display=swap");
+
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.navbar-brand {
+  font-family: "Permanent Marker";
+}
+
+.custom-separator {
+  border-top: 6px solid;
+  opacity: 100%;
+}
+
+.hero {
+  background-color: navy-blue;
+}
+
+/* Menu efecto Subrayado */
+
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+/* Menu efecto Subrayado */
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: $my-accent;
+  width: 0%;
+  content: "";
+  height: 4px;
+  transition: all 0.5s;
+}
+/* Menu efecto Subrayado */
